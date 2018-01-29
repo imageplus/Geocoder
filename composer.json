@@ -1,0 +1,19 @@
+{
+    "name": "imageplus/geocoder",
+    "description": "Postcode lookup wrapper",
+    "require": {
+        "kitetail/zttp": "^0.3.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Harry Messenger",
+            "email": "harry.messenger@image-plus.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Imageplus\\Geocoder\\": "src/"
+        }
+    }
+}
