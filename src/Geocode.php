@@ -25,7 +25,11 @@ class Geocode
                 break;
             case 'googlemaps':
                 $apikey = config('image-plus-geocoder.geocoder.googlemaps');
-                $url = 'https://maps.googleapis.com/maps/api/geocode/json?address='. $postcode . '&key=' . $apikey;
+                if(strtolower(config('image-plus-geocoder.geocoder.locale')) == 'en-gb'){
+                    $url = 'https://maps.google.co.uk/maps/api/geocode/json?address='. $postcode . '&key=' . $apikey;
+                } else {
+                    $url = 'https://maps.googleapis.com/maps/api/geocode/json?address='. $postcode . '&key=' . $apikey;
+                }
                 return $this->googlemaps($url);
                 break;
             default:
