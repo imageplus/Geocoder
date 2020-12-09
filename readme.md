@@ -5,7 +5,7 @@ A Laravel 5.X package providing simple wrappers over three postcode geocoding se
 Here are a few short examples of what you can do:
 
 ```php
- $results = Imagegeo::geocode($request->postcode,'googlemaps');
+ $results = Geocoder::geocode($request->postcode,'googlemaps');
  $latitude = $results['lat'];
 $longitude = $results['lng'];
 ```
@@ -16,7 +16,7 @@ TBC
 
 Find yourself stuck using the package? Found a bug? Got a suggestion of additional providers to add Feel free to [create an issue on GitHub](https://github.com/imageplus/geocoder/issues), we'll try to address it as soon as possible.
 
-If you've found a bug regarding security please mail [harry.messenger@image-plus.co.uk](mailto:harry.messenger@image-plus.co.uk).
+If you've found a bug regarding security please mail [support@image-plus.co.uk](mailto:support@image-plus.co.uk).
 
 ## Installation
 
