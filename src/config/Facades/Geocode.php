@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Imageplus\Geocoder;
+namespace Imageplus\Geocoder\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class Imagegeo extends Facade
+class Geocode extends Facade
 {
     protected static function getFacadeAccessor() {
         return 'geocode';
